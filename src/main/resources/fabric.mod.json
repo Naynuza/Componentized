@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "componentized",
+  "version": "${version}",
+  "name": "Componentized",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/deck/Componentized"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/componentized/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "blu0191.componentized.client.ComponentizedClient"
+    ],
+    "main": [
+      "blu0191.componentized.Componentized"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
