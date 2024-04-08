@@ -23,13 +23,11 @@ public class CraftingTableComponent implements IComponent {
     public CraftingTableComponent() {
 
     }
-    public ActionResult onInteractMob(ComposableEntity entity, PlayerEntity player, Hand hand) {
+    /*public ActionResult onInteractMob(ComposableEntity entity, PlayerEntity player, Hand hand) {
         //useCraftingTable()
-    }
+    }*/
     public ActionResult onUseBlock(ComposableBlock block, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        //useCraftingTable()
-    }
-        /*System.out.println("useCraftingTable");
+        System.out.println("useCraftingTable");
         if (world.isClient) {
             System.out.println("isClient");
             return ActionResult.SUCCESS;
@@ -39,7 +37,7 @@ public class CraftingTableComponent implements IComponent {
             player.incrementStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
             return ActionResult.CONSUME;
         }
-    }*/
+    }
     public NamedScreenHandlerFactory createScreenHandlerFactory(World world, BlockPos pos) {
         System.out.println("createScreenHandlerFactory");
         return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> {
