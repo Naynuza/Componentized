@@ -6,6 +6,5 @@ public class CraftingTableComposableBlock extends ComposableBlock {
     public CraftingTableComposableBlock(Settings settings) {
         super(settings);
         components.add(new CraftingTableComponent());
-        components.add(new CraftingTableComponent());
     }
 }
