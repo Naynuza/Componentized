@@ -15,8 +15,6 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class TestComponent extends Component {
-    static Class<CraftingTableComponent> CTC = CraftingTableComponent.class;
-
     Text text;
 
     int timesUsed = 0;

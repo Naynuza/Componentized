@@ -1,25 +1,15 @@
 package blu0191.componentized.block;
 
-import blu0191.componentized.Componentized;
 import blu0191.componentized.component.Component;
-import blu0191.componentized.component.CraftingTableComponent;
 import blu0191.componentized.entity.ComposableBlockEntity;
 import blu0191.componentized.generic.ExtendsList;
-import com.mojang.datafixers.types.Type;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.datafixer.TypeReferences;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtList;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Util;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

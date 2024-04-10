@@ -1,7 +1,6 @@
 package blu0191.componentized.entity;
 
 import blu0191.componentized.Componentized;
-import blu0191.componentized.block.TestComposableBlock;
 import blu0191.componentized.component.Component;
 import blu0191.componentized.component.CraftingTableComponent;
 import blu0191.componentized.component.TestComponent;
