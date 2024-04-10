@@ -3,7 +3,6 @@ package blu0191.componentized.component;
 import blu0191.componentized.block.ComposableBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.LootableInventory;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
