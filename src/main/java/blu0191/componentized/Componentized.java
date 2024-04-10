@@ -18,8 +18,8 @@ import org.jetbrains.annotations.NotNull;
 public class Componentized implements ModInitializer {
     public static final String NAMESPACE = "componentized";
 
-    public static final TestComposableBlock TEST_COMPOSABLE_BLOCK = new TestComposableBlock(FabricBlockSettings.create().strength(4.0f));
-    public static final CraftingTableComposableBlock CRAFTING_TABLE_COMPOSABLE_BLOCK = new CraftingTableComposableBlock(FabricBlockSettings.create().strength(1.0f));
+    public static final TestComposableBlock TEST_COMPOSABLE_BLOCK = new TestComposableBlock(FabricBlockSettings.create().strength(4.0f).nonOpaque());
+    public static final CraftingTableComposableBlock CRAFTING_TABLE_COMPOSABLE_BLOCK = new CraftingTableComposableBlock(FabricBlockSettings.create().strength(1.0f).nonOpaque());
 
     public static final ComposableBlock COMPOSABLE_BLOCK = new ComposableBlock(FabricBlockSettings.create().strength(4.0f));
     public static BlockEntityType<ComposableBlockEntity> COMPOSABLE_BLOCK_ENTITY;

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "componentized:block/composable_block" }
+  }
+}
