@@ -1,5 +1,6 @@
 package blu0191.componentized.block;
 
+import blu0191.componentized.component.CraftingTableComponent;
 import blu0191.componentized.component.TestComponent;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
@@ -17,6 +18,10 @@ import org.jetbrains.annotations.Nullable;
 public class TestComposableBlock extends ComposableBlock {
     public TestComposableBlock(Settings settings) {
         super(settings);
-        components.add(new TestComponent());
+    }
+
+    @Override
+    public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
+        getComponents(world, pos).addIfTypeAbsent(TestComponent.class);
     }
 }
