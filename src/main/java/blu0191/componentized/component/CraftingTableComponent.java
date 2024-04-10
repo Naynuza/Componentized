@@ -4,7 +4,6 @@ import blu0191.componentized.block.ComposableBlock;
 import blu0191.componentized.handler.CraftingComponentScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.screen.CraftingScreenHandler;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
@@ -16,13 +15,14 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static net.minecraft.block.AbstractBlock.createCodec;
-
-public class CraftingTableComponent implements IComponent {
+public class CraftingTableComponent extends Component {
     Text TITLE = Text.translatable("container.crafting");
     public CraftingTableComponent() {
 
     }
+
+    public String getName() { return "CraftingTable"; }
+
     /*public ActionResult onInteractMob(ComposableEntity entity, PlayerEntity player, Hand hand) {
         //useCraftingTable()
     }*/
