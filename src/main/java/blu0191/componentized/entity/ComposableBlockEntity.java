@@ -4,6 +4,7 @@ import blu0191.componentized.Componentized;
 import blu0191.componentized.component.Component;
 import blu0191.componentized.component.CraftingTableComponent;
 import blu0191.componentized.component.TestComponent;
+import blu0191.componentized.component.VirusComponent;
 import blu0191.componentized.generic.ExtendsList;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -38,6 +39,11 @@ public class ComposableBlockEntity extends BlockEntity {
             }
             if (Objects.equals(componentName, "Test")) {
                 var component = new TestComponent();
+                component.readNbt(componentDataCompound);
+                components.add(component);
+            }
+            if (Objects.equals(componentName, "Virus")) {
+                var component = new VirusComponent();
                 component.readNbt(componentDataCompound);
                 components.add(component);
             }
